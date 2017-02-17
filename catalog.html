@@ -11,157 +11,185 @@
 
 <body>
     <header class="main-header">
-        <section class="container-head">
         <div class="container clearfix">
-            <div class="logo-index">
-                <img src="img/logo.png" alt="Нёрдс">
+            <div class="left">
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
             </div>
-            <nav class="main-navigation">
-                <ul>
-                    <li>
-                        <a href="#">СТУДИЯ</a>
-                    </li>
-                    <li>
-                        <a href="#">КЛИЕНТЫ</a>
-                    </li>
-                    <li>
-                        <a href="#">МАГАЗИН</a>
-                    </li>
-                    <li>
-                        <a href="#">КОНТАКТЫ</a>
-                    </li>
-                </ul>
-
-            </nav>
-            <div class="basket-area">
-                <a class="basket" href="#">КОРЗИНА</a>
-            </div>
-            </div>
-       
-        <h1 class="catalog-title container">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
-        </section>
-    </header>
-    <main class="container main-content">
-        <section class="preference clearfix">
-            <form action="#" method="post">
-                <div class="cost-range">
-                    <p class="preference-name">СТОИМОСТЬ</p>
-                    <div class="cost-range-scale">
-                        <input type="range" min="0" max="15000" step="1">
-                    </div>
-                    <div class="cost-left">
-                        <span class="cost-left-from">от</span>
-                        <input class="min-cost" type="number" value="0">
-                    </div>
-                    <div class="cost-right">
-                        <span class="cost-right-till">от</span>
-                        <input class="max-cost" type="number" value="15000">
-                    </div>
-                </div>
-                <div class="grid">
-                    <p class="preference-name">СЕТКА</p>
-                    <input type="radio" name="grid-name" id="adaptive" value="adaptive" checked>
-                    <label class="preference-label" for="adaptive">Адаптивная</label>
-                    <input type="radio" name="grid-name" id="rubber" value="rubber">
-                    <label class="preference-label" for="rubber">Резинования</label>
-                    <input type="radio" name="grid-name" id="fixed" value="fixed">
-                    <label class="preference-label" for="fixed">Фиксированная</label>
-                </div>
-                <div class="features">
-                    <p class="preference-name">ОСОБЕННОСТИ</p>
-                    <input id="slider" name="slider" type="checkbox" value="slider" checked>
-                    <label class="preference-label" for="slider">Слайдер</label>
-                    <input id="advantages" name="advantages" type="checkbox" value="advantages" disabled>
-                    <label class="preference-label" for="advantages">Блок преимуществ</label>
-                    <input id="news" name="news" type="checkbox" value="news" checked>
-                    <label class="preference-label" for="news">Новости</label>
-                    <input id="gallery" name="gallery" type="checkbox" value="gallery" disabled>
-                    <label class="catalog-label" for="gallery">Галлерея</label>
-                    <input id="basket" name="basket" type="checkbox" value="basket" disabled>
-                    <label class="preference-label" for="basket">Корзина</label>
-                    <button type="submit" class="btn-preference">Показать</button>
-                </div>
-            </form>
-        </section>
-        <section class="catalog">
-            <div class="catalog-sort">
-                <p class="catalog-sort-name">СОРТИРОВАТЬ</p>
-                <a href="#" class="catalog-sort-option">По цене</a>
-                <a href="#" class="catalog-sort-option">По типу</a>
-                <a href="#" class="catalog-sort-option">По функционалу</a>
-                <a href="#" class="catalog-sort-arrow-down"></a>
-                <a href="#" class="catalog-sort-arrow-up"></a>
-            </div>
-            <div class="catalog-main clearfix">
-                <div class="catalog-item">
-                    <a href="#" class="catalog-main-item">
-                        <figure class="catalog-main-image">
-                            <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-                        </figure>
-                    </a>
-                </div>
-                <div class="catalog-item">
-                    <a href="#" class="catalog-main-item">
-                        <figure class="catalog-main-image">
-                            <img src="img/img-pink.jpg" alt="Sedona" width="360" height="576">
-                        </figure>
-                    </a>
-                </div>
-                <div class="catalog-item">
-                    <a href="#" class="catalog-main-item">
-                        <figure class="catalog-main-image">
-                            <img src="img/img-barbershop.jpg" alt="Sedona" width="360" height="576">
-                        </figure>
-                    </a>
-                </div>
-                <div class="catalog-item">
-                    <a href="#" class="catalog-main-item">
-                        <figure class="catalog-main-image">
-                            <img src="img/img-mishka.jpg" alt="Sedona" width="360" height="576">
-                        </figure>
-                    </a>
-                </div>
-                <div class="catalog-item">
-                    <a href="#" class="catalog-main-item">
-                        <figure class="catalog-main-image">
-                            <img src="img/img-aplus.jpg" alt="Sedona" width="360" height="576">
-                        </figure>
-                    </a>
-                </div>
-                <div class="catalog-item">
-                    <a href="#" class="catalog-main-item">
-                        <figure class="catalog-main-image">
-                            <img src="img/img-kvast.jpg" alt="Sedona" width="360" height="576">
-                        </figure>
-                    </a>
-                </div>
-                
-                
-            </div>
-           <div class="pages">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#" class="pages-next">Следующая</a>
-            </div>
-            </section>
-              
-        
-    </main>
-    <section class="map">
-      <div class="map-container">
-            <div class="map-image clearfix">
-                <h4>NЁRDS DESIGN STUDIO</h4>
-                <p>191186, Санкт-Петербург,
-                    <br>ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <a class="btn" href="#">НАПИШИТЕ НАМ</a>
-            </div>
-            <div class="map-marker">
-
+            <div class="right">
+                <nav class="main-header_nav">
+                    <ul>
+                        <li><a href="#">студия</a></li>
+                        <li><a href="#">клиенты</a></li>
+                        <li class="active"><a>магазин</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="basket" href="#">корзина</a>
             </div>
         </div>
-    </section>
+    </header>
+    <main class="content">
+        <div class="catalog-title">
+            <div class="container title">
+                <h4>Магазин готовых шаблонов</h4>
+            </div>
+        </div>
+        <section class="catalog-content container clearfix">
+            <div class="preference">
+
+                <form action="#" method="GET">
+                    <div class="range-filter">
+                        <p class="pref-title">СТОИМОСТЬ</p>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price">от
+                                <input name="min-price" type="text" value="0">
+                            </label>
+                            <label class="max-price">до
+                                <input name="max-price" type="text" value="15000">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog-grid">
+                        <p class="pref-title title-grid">СЕТКА</p>
+                        <div class="pref-grid">
+                            <input type="radio" name="grid-name" id="adaptive" value="adaptive" checked>
+                            <label class="preference-label">Адаптивная</label>
+                        </div>
+                        <div class="pref-grid">
+                            <input type="radio" name="grid-name" id="rubber" value="rubber">
+                            <label class="preference-label">Фиксированная</label>
+                        </div>
+                        <div class="pref-grid">
+                            <input type="radio" name="grid-name" id="fixed" value="fixed">
+                            <label class="preference-label">Резиновая</label>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <p class="pref-title title-features">ОСОБЕННОСТИ</p>
+                        <div class="f-item">
+                            <input id="slider" name="slider" type="checkbox" value="slider" checked>
+                            <label class="preference-label" for="slider">Слайдер</label>
+                        </div>
+                        <div class="f-item">
+                            <input id="advantages" name="advantages" type="checkbox" value="advantages">
+                            <label class="preference-label" for="advantages">Блок преимуществ</label>
+                        </div>
+                        <div class="f-item">
+                            <input id="news" name="news" type="checkbox" value="news" checked>
+                            <label class="preference-label" for="news">Новости</label>
+                        </div>
+                        <div class="f-item">
+                            <input id="gallery" name="gallery" type="checkbox" value="gallery">
+                            <label class="catalog-label" for="gallery">Галлерея</label>
+                        </div>
+                        <div class="f-item">
+                            <input id="basket" name="basket" type="checkbox" value="basket">
+                            <label class="preference-label" for="basket">Корзина</label>
+                        </div>
+                        <button type="submit" class="btn-preference">ПОКАЗАТЬ</button>
+                    </div>
+                </form>
+            </div>
+            <section class="catalog clearfix">
+                <div class="title-sort">
+                    <div class="sort-left">СОРТИРОВАТЬ</div>
+                    <div class="sort-right">
+                        <div class="sort">
+                            <ul>
+                                <li><a class="btn-sort" href="#">ПО ЦЕНЕ</a></li>
+                                <li><a class="btn-sort" href="#">ПО ТИПУ</a></li>
+                                <li><a class="btn-sort" href="#">ПО НАЗВАНИЮ</a></li>
+                            </ul>
+                        </div>
+                        <div class="sort-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-list clearfix">
+                    <div class="list-grid">
+                        <div class="col-catalog  catalog-item">
+                            <div class="browser"></div>
+                            <div class="item">
+                                <a href="#" class="catalog-main-item">
+                                    <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-catalog catalog-item">
+                            <div class="browser"></div>
+                            <div class="item">
+                                <a href="#" class="catalog-main-item">
+                                    <img src="img/img-pink.jpg" alt="PINK" width="360" height="576">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-catalog catalog-item">
+                            <div class="browser"></div>
+                            <div class="item">
+                                <a href="#" class="catalog-main-item">
+                                    <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-catalog catalog-item">
+                            <div class="browser"></div>
+                            <div class="item">
+                                <a href="#" class="catalog-main-item">
+                                    <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-catalog catalog-item">
+                            <div class="browser"></div>
+                            <div class="item">
+                                <a href="#" class="catalog-main-item">
+                                    <img src="img/img-aplus.jpg" alt="A+" width="360" height="576">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-catalog catalog-item">
+                            <div class="browser"></div>
+                            <div class="item">
+                                <a href="#" class="catalog-main-item">
+                                    <img src="img/img-kvast.jpg" alt="Kvast" width="360" height="576">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="map">
+            <div class="map-container">
+                <div class="map-image">
+                    <h4>NЁRDS DESIGN STUDIO</h4>
+                    <p>191186, Санкт-Петербург,
+                        <br>ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+                </div>
+                <div class="map-marker">
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="main-footer">
         <div class="container clearfix">
             <div class="footer-social">
@@ -170,14 +198,10 @@
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </div>
             <div class="footer-text">
-                <span class="foot">Давайте дружить, это выгодно!</span>
-                Скидка 10% для друзей из социальных сетей.
-
+                <span class="foot">Давайте дружить, это выгодно!</span> Скидка 10% для друзей из социальных сетей.
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>

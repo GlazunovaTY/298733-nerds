@@ -7,64 +7,56 @@
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>Nёrds</title>
-
 </head>
 
 <body>
     <header class="main-header">
-        <section class="container-head">
-            <div class="container clearfix">
-                <div class="logo-index">
-                    <img src="img/logo.png" alt="Нёрдс">
-                </div>
-                <nav class="main-navigation">
+        <div class="container clearfix">
+            <div class="left">
+                <a class="logo" href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <nav class="main-header_nav">
                     <ul>
-                        <li>
-                            <a href="#">СТУДИЯ</a>
-                        </li>
-                        <li>
-                            <a href="#">КЛИЕНТЫ</a>
-                        </li>
-                        <li>
-                            <a href="#">МАГАЗИН</a>
-                        </li>
-                        <li>
-                            <a href="#">КОНТАКТЫ</a>
-                        </li>
+                        <li><a href="#">студия</a></li>
+                        <li><a href="#">клиенты</a></li>
+                        <li><a href="catalog.html">магазин</a></li>
+                        <li><a href="#">контакты</a></li>
                     </ul>
-
                 </nav>
-                <div class="basket-area">
-                    <a class="basket" href="#">КОРЗИНА</a>
-                </div>
+                <a class="basket" href="#">корзина</a>
             </div>
-        </section>
-        <section class="container content-head clearfix">
-            <div class="content-short">
-                <h1>Долго, дорого,<br>скрупулезно.</h1>
-                <p>Математически выверенный дизайн
-                    <br>для вашего сайта или мобильного приложения</p>
-                <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
-            </div>
-            <div class="slider">
-                <input type="radio" id="btn-1" name="toggle" checked>
-                <input type="radio" id="btn-2" name="toggle">
-                <input type="radio" id="btn-3" name="toggle">
-                <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>
-                </div>
-                <div class="slides">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                </div>
-            </div>
-        </section>
+        </div>
     </header>
-    <main class="container">
-        <section class="service-block clearfix">
+    <main class="main-content">
+        <section class="content-head">
+            <div class="container clearfix">
+                <div class="content-short">
+                    <h1>Долго, дорого,<br>скрупулезно.</h1>
+                    <p>Математически выверенный дизайн
+                        <br>для вашего сайта или мобильного приложения</p>
+                    <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                </div>
+                <div class="slider">
+                    <input type="radio" id="btn-1" name="toggle" checked>
+                    <input type="radio" id="btn-2" name="toggle">
+                    <input type="radio" id="btn-3" name="toggle">
+                    <div class="slider-controls">
+                        <label for="btn-1"></label>
+                        <label for="btn-2"></label>
+                        <label for="btn-3"></label>
+                    </div>
+                    <div class="slides">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container service-block clearfix">
             <div class="service-block-item">
                 <img src="img/illustration-1.jpg" alt="">
                 <h2 class="service-block_title">ВЕБ-САЙТЫ</h2>
@@ -87,86 +79,74 @@
                 <a class="btn btn-pres" href="#">ЗАКАЗАТЬ</a>
             </div>
         </section>
-        <section class="content-text clearfix">
-            <div class="content-text_left">
-                <p class="content-title">Мы -- маленькая, но гордая
-                    <br> дизайн-студия из Краснодара.</p>
-                <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+        <section class="container">
+            <div class="content-text clearfix">
+                <div class="content-text_left">
+                    <p class="content-title">Мы - маленькая, но гордая
+                        <br> дизайн-студия из Краснодара.</p>
+                    <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
                     <br>превыше креатива. Работаем не покладая рук, как роботы.</span>
-                <p class="content-text_bold">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-                <p class="content-text-item">Веб-сайтов любой сложности</p>
-                <p class="content-text-item">Мобильных приложений для iOS и Android</p>
-                <p class="content-text-item">Слайдшоу и видео для корпоративных презентаций</p>
-
-            </div>
-            <div class="content-text_right">
-                <img src="img/nerds-illustration.jpg" alt="Logo">
-                <p class="content-text_bold">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ</p>
-                <div class="percents">
-                    <div class="percents-col col_3">
-                        <span class="text-percent">146<sup>%</sup></span>
-                        <p class="content-text-item">Уровень
-                            <br>самоотдачи</p>
-                    </div>
-                    <div class="percents-col col_3">
-                        <span class="text-percent">100<sup>%</sup></span>
-                        <p class="content-text-item">Соблюдение
-                            <br>сроков</p>
-                    </div>
-                    <div class="percents-col col_3">
-                        <span class="text-percent">50<sup>%</sup></span>
-                        <p class="content-text-item">Минимальная
-                            <br>предоплата</p>
-
+                    <p class="content-text_bold">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+                    <ul class="list">
+                        <li>Веб-сайтов любой сложности</li>
+                        <li>Мобильных приложений для iOS и Android</li>
+                        <li>Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </div>
+                <div class="content-text_right">
+                    <img src="img/nerds-illustration.jpg" alt="Logo">
+                    <p class="content-text_bright">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ</p>
+                    <div class="percents">
+                        <div class="percents-col col_3">
+                            <span class="text-percent">146<sup>%</sup></span>
+                            <p class="content-text-ritem">Уровень
+                                <br>самоотдачи</p>
+                        </div>
+                        <div class="percents-col col_3">
+                            <span class="text-percent">100<sup>%</sup></span>
+                            <p class="content-text-ritem">Соблюдение
+                                <br>сроков</p>
+                        </div>
+                        <div class="percents-col col_3">
+                            <span class="text-percent">50<sup>%</sup></span>
+                            <p class="content-text-ritem">Минимальная
+                                <br>предоплата</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
         </section>
-        <section class="description-ref clearfix">
-            <div class="col col_4">
-                <a href="#"><img src="img/logo-html.png" alt="html academy"></a>
+        <section class="container description-ref">
+            <div class="grid  clearfix">
+                <div class="col col_4">
+                    <a href="#"><img src="img/logo-html.png" alt="html academy"></a>
+                </div>
+                <div class="col col_4">
+                    <a href="#"><img src="img/logo_borod.png" alt="Barbershop"></a>
+                </div>
+                <div class="col col_4">
+                    <a href="#"><img src="img/logo-pink.png" alt="PINK"></a>
+                </div>
+                <div class="col col_4">
+                    <a href="#"><img src="img/logo-mish.png" alt="MISHKA"></a>
+                </div>
             </div>
-            <div class="col col_4">
-                <a href="#"><img src="img/logo_borod.png" alt="Barbershop"></a>
+        </section>
+        <section class="map">
+            <div class="map-container">
+                <div class="map-image">
+                    <h4>NЁRDS DESIGN STUDIO</h4>
+                    <p>191186, Санкт-Петербург,
+                        <br>ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+                </div>
+                <div class="map-marker">
+                </div>
             </div>
-            <div class="col col_4">
-                <a href="#"><img src="img/logo-pink.png" alt="PINK"></a>
-            </div>
-            <div class="col col_4">
-                <a href="#"><img src="img/logo-mish.png" alt="MISHKA"></a>
-            </div>
-            <!--<div class="description-ref_name">
-                <a class="description-ref-name" href="#"><img src="img/logo-html.png" alt="html academy"></a>
-            </div>
-            <div class="description-ref_name">
-                <a class="description-ref-name" href="#"><img src="img/logo_borod.png" alt="Barbershop"></a>
-            </div>
-            <div class="description-ref_name">
-                <a class="description-ref-name" href="#"><img src="img/logo-pink.png" alt="PINK"></a>
-            </div>
-            <div class="description-ref_name">
-                <a class="description-ref-name" href="#"><img src="img/logo-mish.png" alt="MISHKA"></a>
-            </div>-->
         </section>
     </main>
-    <section class="map">
-        <div class="map-container">
-            <div class="map-image clearfix">
-                <h4>NЁRDS DESIGN STUDIO</h4>
-                <p>191186, Санкт-Петербург,
-                    <br>ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел. +7 (812) 275-75-75</p>
-                <a class="btn" href="#">НАПИШИТЕ НАМ</a>
-            </div>
-            <div class="map-marker">
 
-            </div>
-        </div>
-
-    </section>
     <footer class="main-footer">
         <div class="container clearfix">
             <div class="footer-social">
@@ -175,11 +155,30 @@
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </div>
             <div class="footer-text">
-                <span class="foot">Давайте дружить, это выгодно!</span> Скидка 10% для друзей из социальных сетей.
+                <p class="foot">Давайте дружить, это выгодно!</p>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
 
             </div>
         </div>
     </footer>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h4 class="modal-content-title">НАПИШИТЕ НАМ</h4>
+        <form class="name-form" action="#" method="post">
+            <label>Ваше имя:
+                <input class="name-user" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label>Ваш e-mail:
+                <input class="name-email" type="text" name="email" placeholder="Для отправки ответа">
+            </label>
+            <label>Текст письма:
+                <input class="name-text" type="text" name="text" placeholder="В свободной форме">
+            </label>
+            <button class="btn" type="submit">ОТПРАВИТЬ</button>
+        </form>
+
+    </div>
+
 </body>
 
 </html>
