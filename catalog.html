@@ -14,7 +14,7 @@
         <div class="container clearfix">
             <div class="left">
                 <a class="logo" href="#">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/logo.png" alt="" width="160" height="65">
                 </a>
             </div>
             <div class="right">
@@ -62,55 +62,57 @@
                         <p class="pref-title title-grid">СЕТКА</p>
                         <div class="pref-grid">
                             <input type="radio" name="grid-name" id="adaptive" value="adaptive" checked>
-                            <label class="preference-label">Адаптивная</label>
+                            <label class="preference-label" for="adaptive">Адаптивная</label>
                         </div>
                         <div class="pref-grid">
                             <input type="radio" name="grid-name" id="rubber" value="rubber">
-                            <label class="preference-label">Фиксированная</label>
+                            <label class="preference-label" for="rubber">Фиксированная</label>
                         </div>
                         <div class="pref-grid">
                             <input type="radio" name="grid-name" id="fixed" value="fixed">
-                            <label class="preference-label">Резиновая</label>
+                            <label class="preference-label" for="fixed">Резиновая</label>
                         </div>
                     </div>
                     <div class="features">
                         <p class="pref-title title-features">ОСОБЕННОСТИ</p>
                         <div class="f-item">
                             <input id="slider" name="slider" type="checkbox" value="slider" checked>
-                            <label class="preference-label" for="slider">Слайдер</label>
+                            <label class="feature-label" for="slider">Слайдер</label>
                         </div>
                         <div class="f-item">
                             <input id="advantages" name="advantages" type="checkbox" value="advantages">
-                            <label class="preference-label" for="advantages">Блок преимуществ</label>
+                            <label class="feature-label" for="advantages">Блок преимуществ</label>
                         </div>
                         <div class="f-item">
                             <input id="news" name="news" type="checkbox" value="news" checked>
-                            <label class="preference-label" for="news">Новости</label>
+                            <label class="feature-label" for="news">Новости</label>
                         </div>
                         <div class="f-item">
                             <input id="gallery" name="gallery" type="checkbox" value="gallery">
-                            <label class="catalog-label" for="gallery">Галлерея</label>
+                            <label class="feature-label" for="gallery">Галлерея</label>
                         </div>
                         <div class="f-item">
                             <input id="basket" name="basket" type="checkbox" value="basket">
-                            <label class="preference-label" for="basket">Корзина</label>
+                            <label class="feature-label" for="basket">Корзина</label>
                         </div>
                         <button type="submit" class="btn-preference">ПОКАЗАТЬ</button>
                     </div>
                 </form>
             </div>
-            <section class="catalog clearfix">
+            <section class="catalog">
                 <div class="title-sort">
                     <div class="sort-left">СОРТИРОВАТЬ</div>
                     <div class="sort-right">
                         <div class="sort">
                             <ul>
-                                <li><a class="btn-sort" href="#">ПО ЦЕНЕ</a></li>
+                                <li><a class="btn-sort active" href="#">ПО ЦЕНЕ</a></li>
                                 <li><a class="btn-sort" href="#">ПО ТИПУ</a></li>
                                 <li><a class="btn-sort" href="#">ПО НАЗВАНИЮ</a></li>
                             </ul>
                         </div>
                         <div class="sort-icon">
+                            <span class="down_price "></span>
+                            <span class="up_price active"></span>
                         </div>
                     </div>
                 </div>
@@ -119,55 +121,82 @@
                         <div class="col-catalog  catalog-item">
                             <div class="browser"></div>
                             <div class="item">
-                                <a href="#" class="catalog-main-item">
-                                    <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
-                                </a>
+                                <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576">
+                                <div class="hidden">
+                                    <strong>SEDONA</strong>
+                                    <p>Информационный сайт
+                                        <br> для туристов</p>
+                                    <a class="btn" href="#">9900 РУБ.</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-catalog catalog-item">
                             <div class="browser"></div>
                             <div class="item">
-                                <a href="#" class="catalog-main-item">
-                                    <img src="img/img-pink.jpg" alt="PINK" width="360" height="576">
-                                </a>
+                                <img src="img/img-pink.jpg" alt="PINK" width="360" height="576">
+                                <div class="hidden">
+                                    <strong>PINK APP</strong>
+                                    <p>Продуктовый лендинг
+                                        <br>приложения для iOS и Android</p>
+                                    <a class="btn" href="#">9900 РУБ.</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-catalog catalog-item">
                             <div class="browser"></div>
                             <div class="item">
-                                <a href="#" class="catalog-main-item">
-                                    <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
-                                </a>
+                                <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576">
+                                <div class="hidden">
+                                    <strong>Barbershop</strong>
+                                    <p>Сайт салоны красоты.
+                                        <br>Для мужчин, да</p>
+                                    <a class="btn" href="#">9900 РУБ.</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-catalog catalog-item">
                             <div class="browser"></div>
                             <div class="item">
-                                <a href="#" class="catalog-main-item">
-                                    <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
-                                </a>
+
+                                <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576">
+                                <div class="hidden">
+                                    <strong>MISHKA</strong>
+                                    <p>Интернет-магазин
+                                        <br>вязаных игрушек</p>
+                                    <a class="btn" href="#">9900 РУБ.</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-catalog catalog-item">
                             <div class="browser"></div>
                             <div class="item">
-                                <a href="#" class="catalog-main-item">
-                                    <img src="img/img-aplus.jpg" alt="A+" width="360" height="576">
-                                </a>
+
+                                <img src="img/img-aplus.jpg" alt="A+" width="360" height="576">
+                                <div class="hidden">
+                                    <strong>A PLUS</strong>
+                                    <p>Лендинг курсов повышения
+                                        <br>квалификации</p>
+                                    <a class="btn" href="#">9900 РУБ.</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-catalog catalog-item">
                             <div class="browser"></div>
                             <div class="item">
-                                <a href="#" class="catalog-main-item">
-                                    <img src="img/img-kvast.jpg" alt="Kvast" width="360" height="576">
-                                </a>
+
+                                <img src="img/img-kvast.jpg" alt="Kvast" width="360" height="576">
+                                <div class="hidden">
+                                    <strong>КВАСТ</strong>
+                                    <p>Промо-сайт производителя
+                                        <br>крафтового кваса</p>
+                                    <a class="btn" href="#">9900 РУБ.</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="pages">
                         <ul>
-                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="active">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">СЛЕДУЮЩАЯ</a></li>

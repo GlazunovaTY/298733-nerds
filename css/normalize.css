@@ -3,4 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1;
+  outline: none !important;
+}
+
+button{
+  border: none;
+  background: #eee;
 }
