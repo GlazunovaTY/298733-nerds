@@ -2,17 +2,33 @@ body {
     font-size: 0px;
     line-height: normal;
     min-width: 1200px;
-    font-family: "Roboto", "Arial", san-serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 
 body {
-  /*background: url("nerds-catalog.jpg") no-repeat 50% 3px;
+    /*background: url("nerds-catalog.jpg") no-repeat 50% 3px;
     background-size: 1440px 3214px;*/
-   /*background: url("nerds-index.jpg") no-repeat 50% 3px;
+    /*background: url("nerds-index.jpg") no-repeat 50% 3px;
     background-size: 1440px 2475px;*/
 }
 
+.divide {
+    background-color: #eeeeee;
+    width: 1160px;
+    height: 3px;
+    border: none;
+}
 
+.divide-1 {
+    margin-top: 80px;
+    margin-bottom: 42px;
+}
+
+.divide-2 {}
+
+.divide-3 {
+    margin-top: 35px;
+}
 
 .main-content {
     font-size: 16px;
@@ -112,8 +128,7 @@ body {
     text-decoration: none;
     margin-top: 84px;
     padding-left: 45px;
-    background: #eeeeee url("../img/sprite.png") no-repeat left center;
-    background-position: -5px -5px;
+    background: #eeeeee url("../img/icon-basket.png") no-repeat left center;
 }
 
 .container {
@@ -196,6 +211,10 @@ body {
     margin-top: 36px;
 }
 
+.service-block_title {
+    text-transform: uppercase;
+}
+
 .content-short .btn {
     margin-top: 38px;
     width: 240px;
@@ -232,12 +251,12 @@ body {
 .service-block-item p {
     font-size: 16px;
     line-height: normal;
-    margin-top: 21px;
+    margin-top: 22px;
     font-weight: 500;
 }
 
 .content-text {
-    margin-top: 122px;
+    margin-bottom: 38px;
 }
 
 .content-text_left {
@@ -278,6 +297,7 @@ body {
 
 .map {
     min-height: 420px;
+    margin-top: 80px;
 }
 
 .map-container {
@@ -321,14 +341,13 @@ body {
 
 .map-image .btn {
     margin-top: 35px;
+    width: 220px;
 }
 
 .map-image h4 {
     font-size: 18px;
     font-weight: 800;
 }
-
-
 
 .main-footer {
     margin-top: 65px;
@@ -389,6 +408,13 @@ body {
 
 .footer-text p {
     margin-top: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-text span {
+    font-size: 16px;
 }
 
 .main-content {
@@ -422,14 +448,13 @@ body {
     width: 260px;
     min-height: 1000px;
     margin-right: 140px;
-    
     float: left;
 }
 
 .pref-title {
-    margin-bottom: 52px;
+    margin-bottom: 54px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .range-filter {
@@ -551,11 +576,6 @@ body {
     box-shadow: 0 0 0 4px #b8b8b8 inset, 0 0 0 8px #fff inset;
 }
 
-.f-item input {
-    /*display: none;*/
-}
-
-
 .pref-grid input:checked + .preference-label:before {
     background: #b8b8b8;
 }
@@ -568,30 +588,43 @@ body {
     margin-bottom: 24px;
 }
 
-/*Попытка сделать чекбокс картинкой----------------------------------------------------------*/
+
+/*Попытка сделать чекбокс картинкой-------------------------------------------*/
+
+.f-item input[type="checkbox"] {
+    display: none;
+}
 
 .feature-label {
     padding-left: 35px;
     font-size: 16px;
     font-weight: 400;
-    
+    line-height: 24px;
     position: relative;
     cursor: pointer;
-   -weblit-user-select: none;
+    -weblit-user-select: none;
     user-select: none;
 }
 
-/*feature-label:before {
+.feature-label:before {
     display: block;
     position: absolute;
     content: '';
+    width: 24px;
+    height: 24px;
     top: 0px;
     left: 0px;
-    width: 23px;
-    height: 23px;
-    background: red;
-}*/
+    background: url("../img/checkbox-off.png") no-repeat;
+}
 
+.f-item input[type="checkbox"]:checked + .feature-label:before {
+    background: url("../img/checkbox-on.png") no-repeat;
+}
+
+.f-item {
+    display: inline-block;
+    width: 260px;
+}
 
 .pref-grid {
     display: inline-block;
@@ -603,7 +636,7 @@ body {
 
 .f-item label {
     padding-left: 35px;
-   /* margin-left: 10px;*/
+    /* margin-left: 10px;*/
 }
 
 .btn-preference {
@@ -637,13 +670,17 @@ body {
 .sort-left {
     min-height: 20px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 800;
     float: left;
 }
 
 .sort-right {
     min-height: 20px;
     float: right;
+}
+
+.btn-sort {
+    font-size: 14px;
 }
 
 .sort {
@@ -931,20 +968,21 @@ body {
 
 .slider-controls label {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     margin: 0 3px;
-    background: white;
-    border: 3px solid white;
+    background: #fff;
+    border: 5px solid white;
     vertical-align: top;
     border-radius: 50%;
     cursor: pointer;
+    /*box-shadow: 0 0 0 3px #c1c1c1 inset, 0 0 0 8px #fff inset;*/
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-    background: #c1c1c1;
+    background: url("../img/active_slide.jpg");
 }
 
 .slide:nth-child(1) {
@@ -1019,8 +1057,8 @@ body {
 }
 
 .description-ref {
-    margin-top: 80px;
-    margin-bottom: 125px;
+    margin-top: 49px;
+    margin-bottom: 45px;
     text-align: center;
 }
 
@@ -1103,7 +1141,7 @@ body {
 .name-form input[type="text"] {
     font-size: 16px;
     line-height: 18px;
-    font-family: "Roboto", "Arial", san-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #000000;
 }
 
